@@ -1,0 +1,21 @@
+import React, { useState } from 'react'
+
+export default function States() {
+  const [name, setName] = useState('neel');
+  
+  const [test, setTest] = useState('neel123@gmail.com');
+                                                  // function ma state update kariyo
+  const handleClick = () => {
+    setTest('nilay123@gmail.com'); // replace 'new value' with the new value you want to set
+  }
+  
+  
+  return (
+    <div >
+                                           {/* state no use kariyo  */}
+        <h1>State sikho {test}</h1>    
+                                               {/* onclick ma function pass karvu pade */}
+    <button onClick={handleClick}>click karo!</button> 
+    </div>
+  )
+}
